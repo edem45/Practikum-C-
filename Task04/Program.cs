@@ -13,15 +13,13 @@ int number3 = Convert.ToInt32(Console.ReadLine());
 
 int max = number1;
 
-if (number2 > max)
+if (max < number2)
 {
     max = number2;
-    Console.Write($"Максимальное число: {number2} ");
 }
-else if (number3 > max)
+if (max < number3)
 {
     max = number3;
-    Console.Write($"Максимальное число: {number3} ");
 }
-else
-    Console.Write($"Максимальное число: {number1} ");
+    
+    Console.Write($"Максимальное число: {max} ");
