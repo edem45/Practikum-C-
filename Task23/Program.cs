@@ -18,11 +18,7 @@ Square(numberN, numberS);
 
 void Square(int num, int num2)
 {
-    int i = 0;
-    while (i < num2)
-    {
-        i++;
-    }
+
     int count = 1;
     if (num < 0)
     {
@@ -30,7 +26,16 @@ void Square(int num, int num2)
 
         while (count <= num)
         {
-            Console.WriteLine($"{count,3} {-1 * Math.Pow(count, i),8}");
+            if (num2 % 2 == 0)
+            {
+                Console.WriteLine($"{count,3} {Math.Pow(count, num2),8}");
+                
+            }
+
+            else{
+                Console.WriteLine($"{count,3} {-1 * Math.Pow(count, num2),8}");
+            }
+
             count++;
         }
     }
@@ -38,7 +43,7 @@ void Square(int num, int num2)
     {
         while (count <= num)
         {
-            Console.WriteLine($"{count,3} {Math.Pow(count, i),8}");
+            Console.WriteLine($"{count,3} {Math.Pow(count, num2),8}");
             count++;
         }
     }
