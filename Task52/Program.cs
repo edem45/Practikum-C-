@@ -10,7 +10,8 @@ int[,] array2d = CreateMatrixRndInt(4, 5, 0, 10);
 PrintMatrix(array2d);
 Console.WriteLine();
 double[] array = SumColumnsMatrix(array2d);
-Console.Write("   [");
+Console.Write("Среднее арифметическое каждого столбца: ");
+Console.Write("[");
 PrintArray(array);
 Console.Write("]");
 
